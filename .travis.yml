@@ -10,7 +10,8 @@ env:
   global:
     - EMQX_VERSION=v3.0-rc.5
     - OTP_VERSION="21.1.3"
-    - TARGET=emqx/emqx
+    # - TARGET=emqx/emqx
+    - TARGET=raymondmm/emqx
     - QEMU_VERSION=v3.0.0
   matrix:
     - DOCKER_FILE=Dockerfile.alpine-tmpl BUILD_FROM=amd64/alpine:3.8 OS=alpine QEMU_ARCH=x86_64 ARCH=amd64
